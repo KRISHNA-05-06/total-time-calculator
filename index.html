@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="main.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    </head>
+
+    <body>
+        <div id="container">
+            <p id="heading">Time Sheet Calculator</p>
+            <div id="tabdiv">
+                <form id="myform">
+                    <table class="table">
+                        <tr>
+                            <th id="head">Day</th>
+                            <th id="head">Starting Time</th>
+                            <th id="head">Ending Time</th>
+                            <th id="head">Break Deduction</th>
+                            <th id="head">Total</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>
+                                <input type="text" id="sth1" class="sth" value="00"> : 
+                                <input type="text" id="stm1" class="stm" value="00">
+                                <select id="std1" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth1" class="eth" value="00"> : 
+                                <input type="text" id="etm1" class="etm" value="00">
+                                <select id="etd1">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh1" class="bdh" value="00"> : 
+                                <input type="text" id="bdm1" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="mth">00</span>:<span id="mtm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>
+                                <input type="text" id="sth2" class="sth" value="00"> : 
+                                <input type="text" id="stm2" class="stm" value="00">
+                                <select id="std2" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth2" class="eth" value="00"> : 
+                                <input type="text" id="etm2" class="etm" value="00">
+                                <select id="etd2">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh2" class="bdh" value="00"> : 
+                                <input type="text" id="bdm2" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="tth">00</span>:<span id="ttm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>
+                                <input type="text" id="sth3" class="sth" value="00"> : 
+                                <input type="text" id="stm3" class="stm" value="00">
+                                <select id="std3" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth3" class="eth" value="00"> : 
+                                <input type="text" id="etm3" class="etm" value="00">
+                                <select id="etd3">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh3" class="bdh" value="00"> : 
+                                <input type="text" id="bdm3" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="wth">00</span>:<span id="wtm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>thursday</td>
+                            <td>
+                                <input type="text" id="sth4" class="sth" value="00"> : 
+                                <input type="text" id="stm4" class="stm" value="00">
+                                <select id="std4" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth4" class="eth" value="00"> : 
+                                <input type="text" id="etm4" class="etm" value="00">
+                                <select id="etd4">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh4" class="bdh" value="00"> : 
+                                <input type="text" id="bdm4" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="thth">00</span>:<span id="thtm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>
+                                <input type="text" id="sth5" class="sth" value="00"> : 
+                                <input type="text" id="stm5" class="stm" value="00">
+                                <select id="std5" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth5" class="eth" value="00"> : 
+                                <input type="text" id="etm5" class="etm" value="00">
+                                <select id="etd5">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh5" class="bdh" value="00"> : 
+                                <input type="text" id="bdm5" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="fth">00</span>:<span id="ftm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>
+                                <input type="text" id="sth6" class="sth" value="00"> : 
+                                <input type="text" id="stm6" class="stm" value="00">
+                                <select id="std6" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth6" class="eth" value="00"> : 
+                                <input type="text" id="etm6" class="etm" value="00">
+                                <select id="etd6">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh6" class="bdh" value="00"> : 
+                                <input type="text" id="bdm6" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="sath">00</span>:<span id="satm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>
+                                <input type="text" id="sth7" class="sth" value="00"> : 
+                                <input type="text" id="stm7" class="stm" value="00">
+                                <select id="std7" class="std">
+                                    <option  value="am">AM</option>
+                                    <option  value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="eth7" class="eth" value="00"> : 
+                                <input type="text" id="etm7" class="etm" value="00">
+                                <select id="etd7">
+                                    <option value="am" style>AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="bdh7" class="bdh" value="00"> : 
+                                <input type="text" id="bdm7" class="bdm" value="00"> 
+                            </td>
+                            <td>
+                                <span id="week-day-final" class="week-day-final"><span id="suth">00</span>:<span id="sutm">00</span></span>
+                            </td>
+                        </tr>
+                        <tr id="finalrow">
+                            <td colspan="3"></td>
+                            <td colspan="2"> Total Hours : <span id="finaltotal"><span id="finalth">00</span>:<span id="finaltm">00</span></span></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="buttons">
+                <button id="calculate-button" class="button" onclick="calculateTotalWHours()"><i class="fa fa-calculator"></i> CALCULATE</button>
+                <button id="clear-button" class="button" onclick="clearAll()"> <i class="fa">&#xf021;</i> CLEAR ALL</button>
+            </div>
+        </div>
+    </body>
+</html>
